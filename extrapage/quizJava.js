@@ -104,7 +104,7 @@ const questions = [
     function makeQuestion(){
         quiz = get("quiz");
         if(pos >= questions.length){
-          quiz.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+          quiz.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct<br> Enter your name down below!</h2>";
           get("quiz_status").innerHTML = "You Finished!";
           
         pos = 0;
@@ -216,3 +216,15 @@ const questions = [
             
 
   
+            // var score = 0;
+            // var highscore = localStorage.getItem("highscore");
+            
+            // if(highscore !== null){
+            //     if (score > highscore) {
+            //         localStorage.setItem("highscore", score);      
+            //     }
+            // }
+            // else{
+            //     localStorage.setItem("highscore", score);
+            // }
+
